@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* utility class*/
+
+.d-flex{
+    display: flex;
+}
+
+.d-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.d-space-between{
+    justify-content: space-between;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.position-fixed{
+    position: fixed;
+}
+
+.max-width{
+    width: 100%;
+}
+
+.max-height{
+    height: 100%;
+}
+
+.color-white{
+    color: white;
+}
+
+/* css pagina */
+
+.sidebar{
+    height: calc(100vh - 100px);
+    background-color: black;
+    width: 200px;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    padding: 15px;
+}
+
+.main-content{
+    overflow-y: scroll;
+    background-color: rgb(20, 25, 34);
+    width: calc(100vw - 200px);
+    height: calc(100vh - 100px);
+
+}
+
+.music-bar{
+    height: 100px;
+    width: 100vw;
+    background-color: rgb(40, 40, 40);
+    bottom: 0;
+}
+
+.logo{
+    margin-bottom: 15px;
+}
+
+.logo img{
+    width: 70%;
+}
+
+.display-menu{
+    margin-top: 10px;
+}
+
+.display-menu > div{
+    margin-bottom: 15px;
+}
+
+.display-menu i{
+    margin: 10px 10px 10px 0;
+}
+
+.playlist{
+    margin: 20px 10px 10px 0px;
+    font-size: small;
+}
+
+.playlist > *{
+    margin: 20px 0;
+}
+
+.add-div{
+    height: 35px;
+    margin-bottom: 25px;
+    
+}
+
+.add{
+    width: 20%;
+    background-color: rgb(163, 163, 163);
+}
+
+.add-div span{
+    margin-left: 5px;
+}
