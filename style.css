@@ -27,6 +27,10 @@
     justify-content: center;
 }
 
+.justify-end{
+    justify-content: end;
+}
+
 .align-center{
     align-items: center;
 }
@@ -41,6 +45,10 @@
 
 .max-height{
     height: 100%;
+}
+
+.half-height{
+    height: 50%;
 }
 
 .color-white{
@@ -115,4 +123,85 @@
 
 .add-div span{
     margin-left: 5px;
+}
+
+.utente{
+    position: absolute;
+    bottom: 100px;
+    width: 160px;
+}
+
+.utente > div{
+    margin: 10px 0;
+}
+
+.utente i, span{
+    font-size: x-small;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(163, 163, 163);
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.profile{
+   height: 30px;
+   background-color: rgb(163, 163, 163);
+   width: 30px;
+   border-radius: 20px;
+   line-height: 30px;
+}
+
+.profile img{
+    width: 80%;
+    height: 70%;
+}
+
+.titolo-bar{
+    height: 50%;
+    margin-left: 10px;
+}
+
+.titolo-bar > img{
+    width: 60px;
+}
+
+.nome-canzone{
+    margin-left: 10px;
+    width: 105px;
+}
+
+.icon-bar i{
+    margin-right: 10px;
+}
+
+.stop-audio{
+    font-size: 1.2em;
+}
+
+.stop-audio i{
+    margin: 10px 15px 5px 15px;
+}
+
+.avvia-canzone{
+    width: 35%;
+}
+
+.bar{
+    border: 2px solid  rgb(163, 163, 163);
+    width: 80%;
+    height: 0;
+    margin-top: 4px;
+}
+
+
+.other-options{
+    width: 200px;
+}
+
+.other-options i{
+    margin: 0 5px;
 }
