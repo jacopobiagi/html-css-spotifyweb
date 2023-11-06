@@ -229,6 +229,8 @@
 .nav{
     background-color: rgba(0,0,0,0.5);
     height: 100px;
+    position: fixed;
+    width: calc(100vw - 200px);
 }
 
 .upgrade{
@@ -403,6 +405,9 @@
         display: none;
     }
     .main-content{
+        width: calc(100vw - 50px);
+    }
+    .nav{
         width: calc(100vw - 50px);
     }
 }
