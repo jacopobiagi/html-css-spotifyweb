@@ -149,7 +149,7 @@
     width: 10px;
     height: 10px;
     border: 1px solid rgb(163, 163, 163);
-    border-radius: 10px;
+    border-radius: 100%;
     margin-right: 5px;
 }
 
@@ -335,4 +335,12 @@
 .bar:hover .circle-ball{
     display: inline;
     margin: 0;
+}
+
+/* css responsive */
+
+@media all and(max-width:1100px) {
+    .album-recenti > div{
+        width: calc(100% / 5);
+    }
 }
