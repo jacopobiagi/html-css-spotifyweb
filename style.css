@@ -72,6 +72,16 @@
     padding: 15px;
 }
 
+.second-sidebar{
+    display: none;
+    height: calc(100vh - 100px);
+    background-color: black;
+    width: 50px;
+    color: rgb(107, 107, 107);
+    font-weight: bold;
+    padding: 15px;
+}
+
 .main-content{
     overflow-y: scroll;
     background-color: rgb(20, 25, 34);
@@ -249,16 +259,16 @@
 
 .album-recenti{
     margin-top: 15px;
+    flex-wrap: wrap;
 }
 
 .album-recenti > div{
-    width: calc(100% / 6);
+    width: calc(100% / 7);
     margin: 0 5px;
 }
 
 .album-recenti *{
     margin-bottom: 10px;
-    flex-wrap: wrap;
 }
 
 .john-joe{
@@ -324,7 +334,7 @@
     color: white;
 }
 
-.circle-ball{
+.fa-circle{
     display: none;
 }
 
@@ -332,15 +342,67 @@
     border: 2px solid green!important;
 }
 
-.bar:hover .circle-ball{
+.bar:hover .fa-circle{
     display: inline;
     margin: 0;
 }
 
 /* css responsive */
 
-@media all and(max-width:1100px) {
+@media all and (max-width:970px) {
+    .album-recenti > div{
+        width: calc(100% / 6);
+    }
+}
+
+@media all and (max-width: 870px) {
     .album-recenti > div{
         width: calc(100% / 5);
+    }
+}
+
+
+@media all and (max-width: 750px) {
+    .album-recenti > div{
+        width: calc(100% / 4);
+    }
+    .nome-canzone{
+        width: 79px;
+    }
+    .icon-bar{
+        flex-direction: column;
+    }
+}
+
+
+@media all and (max-width: 650px) {
+    .album-recenti > div{
+        width: calc(100% / 3);
+    }
+
+    .stop-audio{
+        font-size: small;
+    }
+    .stop-audio i{
+        margin: 10px;
+    }
+    .other-options > div{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .music-bar{
+        font-size: small;
+    }
+}
+
+@media all and (max-width: 560px) {
+    .second-sidebar{
+        display: block;
+    }
+    .sidebar{
+        display: none;
+    }
+    .main-content{
+        width: calc(100vw - 50px);
     }
 }
