@@ -337,7 +337,7 @@
 }
 
 .fa-circle{
-    display: none;
+    display: none!important;
 }
 
 .bar:hover > div:first-child{
@@ -345,7 +345,7 @@
 }
 
 .bar:hover .fa-circle{
-    display: inline;
+    display: inline!important;
     margin: 0;
 }
 
@@ -409,5 +409,8 @@
     }
     .nav{
         width: calc(100vw - 50px);
+    }
+    .music-bar{
+        font-size: 0.3em;
     }
 }
